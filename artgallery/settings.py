@@ -25,7 +25,7 @@ SECRET_KEY = 'h471w=&5y@jol6#g13-d==gvx8vjonbu8f%*32kcx9rg$on6$f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'art-gallery-rita.herokuapp.com']
 
 
 # Application definition
