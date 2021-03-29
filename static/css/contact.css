@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 1.0;
+}
+
+/*Instagram*/
+.fa-instagram{
+    background: rgb(241, 71, 100);
+    color: white;
+}
