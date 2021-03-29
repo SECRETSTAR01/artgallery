@@ -8,3 +8,6 @@ def contact(request):
 
 def pricing(request):
     return render(request, 'pricing.html')
+
+def homepage(request):
+    return render(request, 'home.html')
