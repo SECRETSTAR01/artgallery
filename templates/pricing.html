@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,20 +8,26 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet"  href="{%  static  'css/pricing.css'  %}">
 
-    <title>Hello, world!</title>
+    <title>Pricing</title>
   </head>
   <body>
     <div class="pricing">
         <div class="columns">
             <ul class="price">
-              <li class="header">Basic</li>
-              <li class="grey">$ 9.99 / year</li>
-              <li>10GB Storage</li>
-              <li>10 Emails</li>
-              <li>10 Domains</li>
-              <li>1GB Bandwidth</li>
-              <li class="grey"><a href="#" class="button">Sign Up</a></li>
+              <li class="header">Art Work</li>
+              <li class="grey">₹ 100</li>
+              <li>Expected Completion : 3 Days</li>
+              <li class="grey"><a href="#" class="button">Pay Now</a></li>
+            </ul>
+          </div> 
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Portraits</li>
+              <li class="grey">₹ 150</li>
+              <li>Expected Completion : 4 Days</li>
+              <li class="grey"><a href="#" class="button">Pay Now</a></li>
             </ul>
           </div> 
     </div>

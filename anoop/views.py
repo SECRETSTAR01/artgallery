@@ -11,3 +11,6 @@ def pricing(request):
 
 def homepage(request):
     return render(request, 'home.html')
+
+def artwork(request):
+    return render(request, 'artwork.html')
