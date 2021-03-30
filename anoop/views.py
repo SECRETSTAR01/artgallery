@@ -17,3 +17,6 @@ def artwork(request):
 
 def portrait(request):
     return render(request, 'portrait.html')
+
+def payment(request):
+    return render(request, 'payment.html')
