@@ -55,3 +55,9 @@
           background-color: #4CAF50;
           color: white;
       }
+
+      @media only screen and (max-width: 600px) {
+        .img {
+          width: 100%;
+        }
+      }
