@@ -14,3 +14,6 @@ def homepage(request):
 
 def artwork(request):
     return render(request, 'artwork.html')
+
+def portrait(request):
+    return render(request, 'portrait.html')
