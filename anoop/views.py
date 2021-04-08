@@ -1,4 +1,6 @@
 from django.shortcuts import render, HttpResponse
+from django.core.files.storage import FileSystemStorage
+from .forms import *
 
 def menu(request):
     return render(request, 'index.html')
@@ -20,3 +22,10 @@ def portrait(request):
 
 def payment(request):
     return render(request, 'payment.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def upload(request):
+    form = ArtForm()
+    return render(request, 'upload.html', {'form': form})

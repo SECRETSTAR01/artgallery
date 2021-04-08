@@ -39,3 +39,31 @@ overflow: hidden;
     background-color: #4CAF50;
     color: white;
 }
+
+/*This code is for quotes in the home page*/
+ /* Slideshow container */
+ .slideshow-container {
+    margin-top: 250px;
+    width:50%;
+    background: #76d7f5f1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+  }
+  
+  /* Slides */
+  .slide {
+    display: none;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;
+      color: darkgreen;}
+  
+  /* Add a blue color to the author */
+  .author {color: rgb(245, 46, 20);} 
+  
+  /*Now the code for quotes end here*/
+  /*-------------------------------------------------------------------*/
