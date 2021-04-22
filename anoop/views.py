@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.core.files.storage import FileSystemStorage
+from .models import *
 from .forms import *
 
 def menu(request):
@@ -27,5 +28,13 @@ def about(request):
     return render(request, 'about.html')
 
 def upload(request):
-    form = ArtForm()
-    return render(request, 'upload.html', {'form': form})
+    if request.method == "POST":
+        form=ArtForm(data=request.POST,files=request.FILES)
+        if form.is_valid():
+            form.save()
+            obj=form.instance
+            return render(request,"upload.html",{"obj":obj})  
+    else:
+        form=ArtForm()    
+        img=ArtModel.objects.all()
+    return render(request,"upload.html",{"img":img,"form":form})
