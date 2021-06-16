@@ -19,7 +19,8 @@ def artwork(request):
     return render(request, 'artwork.html')
 
 def portrait(request):
-    return render(request, 'portrait.html')
+    allimages = ArtModel.objects.all()
+    return render(request, 'portrait.html', {'images' : allimages})
 
 def payment(request):
     return render(request, 'payment.html')
@@ -28,13 +29,12 @@ def about(request):
     return render(request, 'about.html')
 
 def upload(request):
-    if request.method == "POST":
-        form=ArtForm(data=request.POST,files=request.FILES)
+    if request.method == 'POST':
+        form = ArtForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            obj=form.instance
-            return render(request,"upload.html",{"obj":obj})  
+            img_obj = form.instance
+            return render(request, 'upload.html', {'form': form, 'img_obj': img_obj})
     else:
-        form=ArtForm()    
-        img=ArtModel.objects.all()
-    return render(request,"upload.html",{"img":img,"form":form})
+        form = ArtForm()
+    return render(request, 'upload.html', {'form': form})

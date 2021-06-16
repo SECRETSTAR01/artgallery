@@ -4,7 +4,7 @@ from django.db import models
 class ArtModel(models.Model):
     art_work = models.ImageField(upload_to="arts/")
     title = models.CharField(max_length=200)
-    insta_handle = models.CharField(max_length=200)
+
     def __str__(self):
         return self.title
 

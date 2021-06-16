@@ -19,64 +19,11 @@
             <a href="about">About</a>
         </div>
 
-        <div class="row">
-            <div class="column">
-              <img src="media/portrait/bt.jpeg" alt="Snow" style="width:100%; height: 400px;">
-              <figcaption>BTS South Korean Band</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/jennifer.jpeg" alt="Forest" style="width:100%; height:400px">
-              <figcaption>Jennifer Winget</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/kristen.jpeg" alt="Mountains" style="width:100%; height:400px">
-              <figcaption>Kristen Steward</figcaption>
-            </div>
-          </div> 
-
-          <div class="row">
-            <div class="column">
-              <img src="media/portrait/nitimohan.jpeg" alt="Snow" style="width:100%; height:400px">
-              <figcaption>Niti Mohan</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/saras.jpeg" alt="Forest" style="width:100%; height:400px">
-              <figcaption>Gautam Rode</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/shahrukh.jpeg" alt="Mountains" style="width:100%; height:400px">
-              <figcaption>Shahrukh Khan</figcaption>
-            </div>
+        {% for i in images reversed %}
+          <div class="column">
+            <img src="{{i.art_work.url}}" alt="Snow" style="width:100%; height: 400px;">
+            <figcaption>{{i.title}}</figcaption>
           </div>
-
-          <div class="row">
-            <div class="column">
-              <img src="media/portrait/shirley1.jpeg" alt="Snow" style="width:100%; height:400px">
-              <figcaption>Shirley Setia</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/shradha.jpeg" alt="Forest" style="width:100%; height:400px">
-              <figcaption>Shraddha Kapoor</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/unknown2.jpeg" alt="Mountains" style="width:100%; height:400px">
-              <figcaption>XYZ</figcaption>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="column">
-              <img src="media/portrait/vikram.jpeg" alt="Snow" style="width:100%; height:400px">
-              <figcaption>Vikram Singh Chauhan</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/vikram.jpeg" alt="Forest" style="width:100%; height:400px">
-              <figcaption>Vikram Singh Chauhan</figcaption>
-            </div>
-            <div class="column">
-              <img src="media/portrait/vikram.jpeg" alt="Mountains" style="width:100%; height:400px">
-              <figcaption>Vikram Singh Chauhan</figcaption>
-            </div>
-          </div>
+        {% endfor %}
     </body>
 </html>

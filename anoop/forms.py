@@ -4,4 +4,4 @@ from .models import *
 class ArtForm(forms.ModelForm):
     class Meta:
         model = ArtModel
-        fields = ('art_work', 'title', 'insta_handle')
+        fields = ('art_work', 'title')
